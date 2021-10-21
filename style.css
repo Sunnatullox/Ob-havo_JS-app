@@ -17,12 +17,12 @@ body
 {
     display: grid;
     grid-template-columns: 50% 50%;
-    height: 100vh;
+    height: 100%;
     background-image: linear-gradient(to bottom, rgb(0,0,0,.3), rgb(0,0,0,.6));
 }
 header
 {
-    display: flex;
+    margin-top: 40%;
     justify-content: center;
     align-items: center;
     padding: 50px 15px 15px;
@@ -37,7 +37,7 @@ header input
     padding: 10px 15px;
     border:none;
     outline: none;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255, 255, 255, 0.356);
     border-radius: 16px 0px 16px 0px ;
     border-bottom: 3px solid #df8e00;
     color: #333;
@@ -103,3 +103,31 @@ margin-bottom: 5px;
     font-weight: 500;
     text-shadow: 0px 4px rgb(0,0,0,.4);
 }
+@media (max-width:850px) {
+    .app-wrap
+{
+    display: grid;
+
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgb(0,0,0,.3), rgb(0,0,0,.6));
+    grid-template-columns: 100%;
+}
+main
+{
+    margin-top: 50px;
+}
+body{
+    background-image: url(/weathergif2.gif);
+}
+
+header,input
+{
+    margin-left: 35%;
+    display: flex;
+    margin-top: -15%;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+}
+}
+
